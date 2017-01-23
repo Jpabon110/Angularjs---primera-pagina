@@ -1,0 +1,174 @@
+<main>  
+    <body ng-controller="MostrarController">
+<div class="container">
+    <!-- Modal Trigger -->
+  <!--<a class="btn-floating btn-large waves-effect waves-light indigo lighten-1" href="#modal1"><i class="material-icons">add</i></a>-->
+   <button class="btn-floating btn-large waves-effect waves-light indigo lighten-1" data-target="modal1" class="btn">
+     <i class="material-icons">add</i></button>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input ng-model="newposts.nombre" type="text" class="validate">
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input ng-model="newposts.titulo" type="text" class="validate">
+          <label for="titulo">Titulo</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field ">          
+            <div class="file-field input-field col s7">
+              <div class="btn indigo lighten-1">
+                <span>File</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input ng-model="newposts.img" id="modalImg" class="file-path validate" type="text">
+              </div>
+            </div>
+        </div>
+       <div class="input-field col s5">
+          <div class="row">
+            <div class="col s12">
+              Mystic Arts:
+              <div class="input-field inline">
+                <input  type="text" class="validate">                
+              </div>
+            </div>
+          </div>
+       </div>
+      </div> 
+      <div class="row">
+        <div class="col s12">
+          Skills
+          <div class="input-field inline">
+            <input ng-model="newSkill.value" type="text" > 
+            <a ng-click="addSkill()" class="waves-effect btn indigo lighten-1 "><i class="material-icons">add</i></a>               
+          </div>
+        </div>
+      </div> 
+  </form>
+  </div>
+          </div>
+          <div class="modal-footer">
+            <a ng-click="addPost()" class="modal-action modal-close waves-effect btn indigo lighten-1">Agree</a>
+          </div>
+        </div>
+
+        
+
+        <!-- Modal Structure editar-->
+        <div id="modal2" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text"  ng-model="editposts.nombre" class="validate">
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input ng-model="editposts.titulo" type="text" class="validate">
+          <label for="titulo">Titulo</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field ">          
+            <div class="file-field input-field col s7">
+              <div class="btn indigo lighten-1">
+                <span>File</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input ng-model="editposts.img" class="file-path validate" type="text">
+              </div>
+            </div>
+        </div>
+       <div class="input-field col s5">
+          <div class="row">
+            <div class="col s12">
+              Mystic Arts:
+              <div class="input-field inline">
+                <input  type="text" class="validate">                
+              </div>
+            </div>
+          </div>
+       </div>
+      </div> 
+      <div class="row">
+        <div class="col s12">
+          <a class="waves-effect btn indigo lighten-1">Skills <i class="material-icons"> star</i></a>   
+          <div class="container">  
+            <div class="input-field inline" ng-repeat="skill in editposts.Skill ">
+              <input ng-model="skill.value" type="text" > 
+              <!--<a ng-click="addSkill()" class="waves-effect btn indigo lighten-1 "><i class="material-icons">add</i></a>               -->
+            </div>
+          </div>
+        </div>
+      </div> 
+  </form>
+  </div>
+          </div>
+          <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect btn indigo lighten-1">Agree</a>
+          </div>
+        </div>        
+
+
+
+    <div class="row" >
+        <div class="col s12 m6 l3" ng-repeat="contenido in posts">
+         <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src= "img/{{ contenido.img }}">              
+            </div>           
+              <div class="card-content grey lighten-2">
+                <span class="card-title activator grey-text text-darken-4 "> 
+                  <strong>{{ contenido.nombre}}</strong>                  
+                  <a href="" class="waves-effect waves-circle waves-light btn-floating secondary-content grey darken-1" style="height: 1.6em !important; width: 1.5em !important;">
+                    <i class="material-icons right">more_vert</i>
+                  </a>                                 
+                  </span>
+                <p><a href="#">{{ contenido.titulo}}</a></p>
+                <span class="card-title activator grey-text text-darken-4 ">                 
+                 <!-- Modal Trigger editar -->
+                  <!--<a ng-click="editar(contenido)" class="btn-floating btn-large waves-effect waves-light indigo lighten-1" href="#modal2"><i class="material-icons">add</i></a>-->
+                  <button ng-click="editar(contenido)" class="btn-floating btn-small waves-effect waves-light indigo lighten-1" data-target="modal2" class="btn">
+                    <i class="material-icons">add</i>
+                    </button>
+                    <button ng-click="removePost(contenido)" class="btn-floating btn-small waves-effect waves-light red darken-1" class="btn">
+                    <i class="material-icons right">close</i>
+                  </button>
+                 </span> 
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{ ma }}<i class="material-icons right">close</i></span>
+                <ul class="collection">
+                  <li class="collection-item" ng-repeat="Skills in contenido.Skill">
+                    <strong>{{ Skills.value }}</strong>
+                  </li>
+                </ul>  
+              </div>            
+          </div>
+
+
+        </div> 
+    </div>
+  </div>  
+
+    </body> 
+</main>
+
+ <script>
+            $( document ).ready(function(){
+              $('.modal').modal();  
+            });
+   </script> 

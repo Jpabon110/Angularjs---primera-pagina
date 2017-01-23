@@ -1,0 +1,77 @@
+    <nav>
+    <div class="nav-wrapper indigo lighten-1">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      
+        <ul class="right hide-on-med-and-down">
+        <li><button ng-click="endSession()" class="btn-floating btn-small waves-effect waves-light red" style="MARGIN-TOP: -10px;" class="btn">
+         <i class="material-icons right">close</i>
+        </button></li>
+
+      </ul>
+
+       <ul class="right hide-on-med-and-down" style="margin-top: 19px;margin-bottom: -19px;">
+        <li><div class="chip">
+          <img src="{{gmail.gimg}}" alt="Contact Person">
+              {{gmail.username}}
+        </div></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><button ng-click="onGoogleLogin()" class="btn-floating btn-small waves-effect waves-light light-green" class="btn">
+          <i class="material-icons" style="margin-top: -10px;">perm_identity</i>
+        </button></li>
+
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#/characters/">Charaters</a></li>        
+        <li><a href="#/tienda/">Tienda</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      <!--<ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>-->
+
+      <ul id="mobile-demo" class="side-nav">
+        <li>
+          <div class="userView">
+            <div class="background">
+              <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/22/e1/a622e1d82ff97669b04045226bdcb06d.jpg">
+          </div>
+          <a href="#!user"><img class="circle" src="http://www.playnomore.com.ar/website/frontend/content/games/50044db4a229b-150x150.jpg"></a>
+          <a href="#!name"><span class="white-text name">John Doe</span></a>
+          <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <!--<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>-->
+          
+
+    </div>
+  </nav>
+
+  <script>
+            $( document ).ready(function(){
+              $(".button-collapse").sideNav();
+            });           
+
+   </script> 
+
+   <script type="text/javascript">
+      (function(){
+              var p = document.createElement('script');
+              p.type = 'text/javascript';
+              p.async = true;
+              p.src = 'https://apis.google.com/js/client.js?onload=onLoadFunction';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(p, s);
+            })();
+   </script>
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="PaginaDirective">
+    <head>
+       <link href="style.css" rel="stylesheet">
+    
+
+         <!--Materialize-->
+     <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/scss" rel="stylesheet" href="bower_components/materialize/sass/materialize.scss"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+       <!--Import jQuery before materialize.js-->
+        <script src="//code.jquery.com/jquery-latest.min.js"></script>      
+
+
+
+        <title>Hola mundo con Angularjs</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+        <script src="https://code.angularjs.org/1.6.1/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.1/angular-resource.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.1/angular-cookies.js"> </script>
+        
+
+        <script src="app.js"></script>
+        <script src="js/directives.js"></script>
+        <script src="js/authFact.js"></script>
+        <script src="js/googleLogin.js"></script>
+        <script src="services.js"></script>
+        <script src="controllers.js"></script>        
+        <script  src="bower_components/materialize/js/materialize.min.js"></script>
+        
+                     
+    </head> 
+
+  <header>
+    <heads></heads>
+</header>
+
+     <div class="parallax-container">
+      <div class="parallax"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/58/97/e95897efa78c61a9cc013e69b52c0638.jpg"></div>
+    </div>
+
+    <div ng-view>
+    
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://s-media-cache-ak0.pinimg.com/originals/e9/58/97/e95897efa78c61a9cc013e69b52c0638.jpg"></div>
+  </div>
+
+    <script>
+        $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+         
+    </script>
+<!--<home></home>-->
+
+<foots></foots>  
+
+
+</html>
