@@ -76,7 +76,7 @@ function(m,h,time,cook,auth){
     }
 
 
-    h.get("personajes.json")
+    h.get("js/personajes.json")
     .then(function(data){
         m.contenidos = data['data'];
         // console.log(m.contenidos);
@@ -107,7 +107,7 @@ function(m,h,time,cook,auth){
     m.addPost = function(){
      m.newposts.Skill =  m.Skill;   
       
-     h.post("personajes.json",
+     h.post("js/personajes.json",
      {
          nombre: m.newposts.nombre,
          titulo:  m.newposts.titulo,

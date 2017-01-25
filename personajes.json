@@ -1,0 +1,115 @@
+[  
+        {
+        "id": 1,
+        "nombre": "Asbel Lhant",
+        "titulo": "Royal knight",
+        "img": "hubert.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Stampede Strike"},
+                   {"value": "Lunar Requiem"},                       
+                   {"value": "Expunging Sword"},                
+                   {"value": "Divine Conqueror"}                   
+                ]
+        },
+
+         {
+        "id": 2,
+        "nombre": "Cheria Barnes",
+        "titulo": "Royal Made",
+        "img": "hubert.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Asterism Line"},
+                   {"value": "Garden of Innocence"},                       
+                   {"value": "Punishing Blossom"},                
+                   {"value": "Trillion Drive"}                   
+                ]
+        },
+
+         {
+        "id": 3,
+        "nombre": "Sophie",
+        "titulo": "Humanoid",
+        "img": "hubert.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Critical Blade"},
+                   {"value": "Infinitia Soul"},                       
+                   {"value": "Zero Dissolver"},                
+                   {"value": "Fire Dragon Rampage"},                   
+                   {"value": "Shadow Moment"}                   
+                ]
+        },
+
+         {
+         "id": 4,                 
+        "nombre": "Hubert Oswell",
+        "titulo": "Major of Strahta's Military",
+        "img": "hubert.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Broadside Waltz"},
+                   {"value": "Tempest Arrow"},                       
+                   {"value": "Expiation"},                
+                   {"value": "No Quarter"}                   
+                ]
+        },
+        
+         {
+         "id": 5,
+        "nombre": "Asbel Lhant",
+        "titulo": "Royal knight",
+        "img": "hubert.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Stampede Strike"},
+                   {"value": "Lunar Requiem"},                       
+                   {"value": "Expunging Sword"},                
+                   {"value": "Divine Conqueror"}                   
+                ]
+        },
+
+         {
+         "id": 6,
+        "nombre": "Cheria Barnes",
+        "titulo": "Royal Made",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Asterism Line"},
+                   {"value": "Garden of Innocence"},                       
+                   {"value": "Punishing Blossom"},                
+                   {"value": "Trillion Drive"}                   
+                ]
+        },
+
+         {
+         "id": 7,
+        "nombre": "Sophie",
+        "titulo": "Humanoid",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Critical Blade"},
+                   {"value": "Infinitia Soul"},                       
+                   {"value": "Zero Dissolver"},                
+                   {"value": "Fire Dragon Rampage"},                   
+                   {"value": "Shadow Moment"}                   
+                ]
+        },
+
+         {
+         "id": 8,
+        "nombre": "Hubert Oswell",
+        "titulo": "Major of Strahta's Military",
+        "img": "asbel.png",
+        "mysticArts": "Mystic Arts",
+        "Skill": [                
+                   {"value": "Broadside Waltz"},
+                   {"value": "Tempest Arrow"},                       
+                   {"value": "Expiation"},                
+                   {"value": "No Quarter"}                   
+                ]
+        }                 
+ ]
